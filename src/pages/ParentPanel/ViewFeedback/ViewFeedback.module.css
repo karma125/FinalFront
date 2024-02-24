@@ -1,0 +1,15 @@
+.viewFeedBack {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+}
+
+.viewFeedBack h1 {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}

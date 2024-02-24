@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	font-family: 'calibri', 'arial', sans-serif;
+}
+
+.signupContainer {
+	margin: 10px auto;
+
+	display: grid;
+	justify-items: center;
+
+	width: 80%;
+	max-width: 1000px;
+}
+
+.signupForm {
+	width: 100%;
+	border: 1px solid #914b9c;
+	margin: 10px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.signupContainer h2 {
+	background-color: #a8d875;
+	padding: 10px;
+	margin: 0 0 10px;
+	grid-column: 1/-1;
+	text-align: center;
+	font-size: 30px;
+}
+
+.signupContainer a {
+	grid-column: 1/-1;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.signupContainer .inputWrapper {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	padding: 5px;
+
+	justify-self: center;
+}
+
+.signupContainer label {
+	text-align: right;
+	margin-inline-end: 10px;
+	align-self: center;
+}
+
+.signupContainer input,
+.signupContainer select {
+	padding: 5px;
+	font-size: 18px;
+	border-radius: 3px;
+	border: 1px solid lightgrey;
+	width: 200px;
+	background-color: #fdf9f0;
+}
+
+.signupContainer select option {
+	text-align: center;
+}
+
+.signupContainer .inputWrapper:has(select) {
+	grid-template-rows: 1fr 0.5fr;
+}
+
+.signupContainer :is(select:hover, input:hover) {
+	border-color: grey;
+}
+
+.signupContainer :is(input[type='text']:not(input[name='id']), select) {
+	direction: rtl;
+}
+
+.signupContainer .inputWrapper:nth-last-of-type(2) {
+	grid-area: 3 / 1;
+}
+
+.signupContainer .inputWrapper:nth-last-of-type(1) {
+	grid-area: 4 / 1;
+}
+
+.signupContainer input[aria-required='true'] + label::before {
+	content: '* ';
+	font-size: 14px;
+}
+
+.signupContainer span.field {
+	grid-column: 1/ 2 span;
+	font-size: 14px;
+	text-align: right;
+	margin-inline-end: 10px;
+	color: transparent;
+}
+
+input[aria-invalid='true'] ~ span.field {
+	color: red;
+}
+
+.signupContainer p {
+	justify-self: center;
+	font-weight: bold;
+	color: red;
+	font-size: 20px;
+}
+
+.signupContainer button {
+	border-radius: 10px;
+	padding: 12px 10px;
+	background-color: #2148aa;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid grey;
+	margin: 10px 0 20px;
+
+	min-width: 300px;
+	justify-self: center;
+}
+
+.signupContainer button:hover {
+	scale: 1.05;
+}
+
+.signupContainer button,
+.signupContainer a {
+	cursor: pointer;
+}

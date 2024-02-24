@@ -1,0 +1,11 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden" viewBox="1536 295 67 68">
+  <defs>
+    <clipPath id="clip0">
+      <rect x="1536" y="295" width="67" height="68" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip0)" transform="translate(-1536 -295)">
+    <path d="M1536 322 1569.5 295 1603 322Z" fill="#D7D7D7" fill-rule="evenodd" />
+    <path d="M1603 363 1569.5 336 1536 363Z" fill="#D7D7D7" fill-rule="evenodd" />
+  </g>
+</svg>

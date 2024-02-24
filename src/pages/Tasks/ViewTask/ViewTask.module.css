@@ -1,0 +1,126 @@
+.viewTasks {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+}
+
+.viewTasks h1 {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.viewTasks table {
+	direction: rtl;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+.viewTasks table td {
+	border: 1px solid #f2f2f2;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.viewTasks table th:not(.editTd)::after {
+	content: '';
+	display: inline-block;
+	background-image: url(../../../Icons/Picture4.png);
+	background-size: contain;
+
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+/* .viewTasks table th:not(.editTd)::after path {
+	width: 10px;
+} */
+
+.viewTasks table th {
+	color: #8c8c8c;
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	position: relative;
+}
+
+.viewTasks .filterWrapper {
+	margin: auto;
+	max-width: 300px;
+	width: 100%;
+	display: grid;
+	text-align: center;
+	gap: 10px;
+}
+
+.viewTasks .filterWrapper h4 {
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	width: 60%;
+	justify-self: center;
+}
+
+.viewTasks .filterWrapper :is(input, select) {
+	font-size: 18px;
+	padding: 8px;
+	width: 100%;
+	border: 0.5px solid rgb(93, 92, 92);
+	border-radius: 7px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.viewTasks .filterWrapper h5 {
+	margin: 2px;
+	font-size: 18px;
+}
+
+.viewTasks .editTd {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.viewTasks .actionBtns {
+	display: flex;
+	justify-content: center;
+}
+
+.viewTasks .btnExport {
+	justify-self: center;
+	background-color: #11c4a4;
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	margin: 20px;
+	border-radius: 8px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.viewTasks .btnExport:hover {
+	opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+	.viewTasks table th:not(.editTd)::after {
+		width: 8px;
+		height: 8px;
+	}
+
+	.viewTasks .filterWrapper h4 {
+		width: 100%;
+	}
+
+	.viewTasks .btnExport {
+		font-size: 14px;
+		padding: 8px 16px;
+		margin: 15px;
+	}
+}

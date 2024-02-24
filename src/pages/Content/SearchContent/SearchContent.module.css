@@ -1,0 +1,83 @@
+.searchContent {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+}
+
+.searchContent h1 {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.searchContent h3 {
+	text-align: center;
+	margin-top: 0;
+	font-size: 24px;
+}
+
+.searchContent form {
+	display: grid;
+	direction: rtl;
+	font-size: 18px;
+}
+
+.searchContent .formBody {
+	padding: 20px;
+	gap: 10px;
+	display: grid;
+	max-width: 1000px;
+	grid-template-columns: 1fr;
+	border: 1px solid #008080;
+}
+
+.searchContent .formItem {
+	display: grid;
+	grid-template-columns: 140px minmax(160px, 1fr);
+	place-self: start;
+}
+
+.searchContent :is(input, select, label) {
+	font-size: 20px;
+}
+
+.searchContent select {
+	width: 100%;
+}
+
+.searchContent .txtNotFound {
+	text-align: center;
+	font-size: 20px;
+}
+
+.searchContent .searchBtn {
+	align-self: end;
+	justify-self: left;
+	background-color: #cb025a;
+	color: white;
+
+	font-weight: bold;
+	font-size: 23px;
+
+	border: 1px solid #797979;
+	border-radius: 7px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.searchContent .formItem {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.searchContent .searchBtn {
+		justify-self: center;
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+}

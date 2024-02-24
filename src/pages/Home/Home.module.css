@@ -1,0 +1,13 @@
+.home .imgWrapper {
+	display: grid;
+	max-width: 1200px;
+	margin: auto;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	gap: 10px;
+}
+
+.home .imgWrapper img {
+	max-width: 100%;
+	place-self: center;
+	padding: 20px;
+}

@@ -1,0 +1,103 @@
+.addTask {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+}
+
+.addTask>div {
+	border-right: 1px solid #008080;
+	border-left: 1px solid #008080;
+	padding: 15px;
+	display: grid;
+	gap: 15px;
+	font-size: 20px;
+}
+
+.addTask>div:last-child {
+	border-bottom: 1px solid #008080;
+}
+
+.addTask :is(h2, h1) {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+}
+
+.addTask .formItem {
+	display: grid;
+	grid-template-columns: 1fr 0.3fr;
+}
+
+.addTask label {
+	justify-self: right;
+	align-self: center;
+	margin-inline-end: 5px;
+	text-align: right;
+}
+
+.addTask :is(input, textarea, select) {
+	align-self: center;
+	justify-self: right;
+	font-size: 18px;
+	direction: rtl;
+}
+
+.addTask textarea {
+	resize: none;
+	justify-self: auto;
+	border: 1px solid #008080;
+}
+
+.addTask .saveBtn {
+	align-self: end;
+	justify-self: left;
+	background-color: #cb025a;
+	color: white;
+
+	font-weight: bold;
+	font-size: 23px;
+
+	border: 1px solid #797979;
+	border-radius: 7px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.addTask>div {
+		border-right: none;
+		border-left: none;
+	}
+
+	.addTask .formItem {
+		grid-template-columns: 1fr;
+	}
+
+	.addTask label {
+		justify-self: center;
+		align-self: center;
+		text-align: center;
+	}
+
+	.addTask :is(input, textarea, select) {
+		align-self: center;
+		justify-self: center;
+		font-size: 16px;
+	}
+
+	.addTask textarea {
+		justify-self: center;
+	}
+
+	.addTask .saveBtn {
+		justify-self: center;
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+}

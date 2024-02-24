@@ -1,0 +1,17 @@
+.container {
+	display: grid;
+	width: 100%;
+}
+
+.logoImg {
+	justify-self: right;
+	max-width: 290px;
+	width: 50%;
+	min-width: 170px;
+}
+
+.kidsJumpingImg {
+	justify-self: center;
+	max-width: 510px;
+	width: 100%;
+}

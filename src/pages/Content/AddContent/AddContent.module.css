@@ -1,0 +1,104 @@
+.addContent {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+	justify-content: space-around;
+}
+
+.addContent form {
+	display: grid;
+	direction: rtl;
+
+	font-size: 20px;
+}
+
+.addContent form :is(input, select) {
+	font-size: 20px;
+}
+
+.addContent .formBody {
+	/* display: flex;
+	flex-wrap: wrap;
+	gap: 10px; */
+	padding: 20px;
+	gap: 10px;
+	display: grid;
+	max-width: 1000px;
+	grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+	border: 1px solid #008080;
+}
+
+.addContent .formBody>div {
+	/* display: flex;
+	flex-basis: 30%; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.addContent .formBody div:has(input[type='file']) {
+	/* flex-basis: 100%; */
+	grid-column: span 2;
+}
+
+.addContent h1 {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.addContent .btnSave {
+	align-self: end;
+	justify-self: left;
+	background-color: #cb025a;
+	color: white;
+
+	font-weight: bold;
+	font-size: 23px;
+
+	border: 1px solid #797979;
+	border-radius: 7px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.addContent .btnSearch {
+	background-color: #72c01e;
+	padding: 10px 20px;
+	border-radius: 7px;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.addContent .formBody {
+		grid-template-columns: repeat(auto-fill, minmax(auto, 100%));
+	}
+
+	.addContent .formBody>div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.addContent .formBody div:has(input[type='file']) {
+		grid-column: span 1;
+	}
+
+	.addContent .btnSearch {
+		margin-top: 5px;
+	}
+
+	.addContent .btnSave,
+	.addContent .btnSearch {
+		justify-self: center;
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+}

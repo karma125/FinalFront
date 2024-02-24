@@ -1,0 +1,48 @@
+.headerContainer {
+	display: grid;
+
+	max-width: 1200px;
+	margin: auto;
+}
+
+.headerContainer > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.headerContainer .actionBtns {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.headerContainer .logoImg {
+	max-width: 300px;
+	width: 50%;
+}
+
+.headerContainer .houseImg {
+	max-width: 60px;
+	cursor: pointer;
+	width: 30%;
+}
+
+.headerContainer .logOutBtn {
+	background-color: #ce025b;
+	border: 1px solid #002970;
+	color: white;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: clamp(14px, 3vw, 20px);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.headerContainer .fullname {
+	font-size: clamp(14px, 5vw, 22px);
+	margin: 0;
+}

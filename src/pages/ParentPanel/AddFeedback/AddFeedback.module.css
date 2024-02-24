@@ -1,0 +1,113 @@
+.addFeedBack {
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+	display: grid;
+}
+
+.addFeedBack form {
+	display: grid;
+	direction: rtl;
+	font-size: 18px;
+}
+
+.addFeedBack .formBody {
+	gap: 10px;
+	display: grid;
+	max-width: 1000px;
+	grid-template-columns: 1fr;
+	border: 1px solid #008080;
+}
+
+.addFeedBack .formBody>*:not(button, h2) {
+	padding: 20px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 200px 1fr;
+}
+
+.addFeedBack .formBody label:not(.labelFindOnCp) {
+	margin-inline-end: 20px;
+	font-size: 20px;
+}
+
+.addFeedBack h2 {
+	background-color: #72c01e;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.addFeedBack .btnSave {
+	align-self: end;
+	justify-self: left;
+	background-color: #cb025a;
+	color: white;
+
+	font-weight: bold;
+	font-size: 23px;
+
+	border: 1px solid #797979;
+	border-radius: 7px;
+	padding: 5px 20px;
+	cursor: pointer;
+	margin: 20px;
+}
+
+.addFeedBack .uploadFileWrapper div {
+	display: flex;
+	width: 100%;
+}
+
+.addFeedBack .uploadFileWrapper input {
+	flex: 1;
+}
+
+.addFeedBack input {
+	max-width: 200px;
+}
+
+.addFeedBack :is(input, textarea) {
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.addFeedBack textarea {
+	margin: 0 20px 5px;
+}
+
+.addFeedBack .labelFindOnCp {
+	background-color: #72c01e;
+	padding: 10px 20px;
+	border-radius: 7px;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.addFeedBack :is(.labelFindOnCp:hover, .btnSave:hover) {
+	opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.addFeedBack .formBody>*:not(button, h2) {
+		padding: 10px;
+	}
+
+	.addFeedBack .btnSave {
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+
+	.addFeedBack .labelFindOnCp {
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+}

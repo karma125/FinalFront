@@ -1,0 +1,9 @@
+.parentPanel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parentPanel img {
+	max-width: 500px;
+}

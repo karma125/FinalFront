@@ -1,0 +1,101 @@
+.workPlan {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.workPlan .addPlan {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	grid-template-rows: 0.5fr 1fr;
+	gap: 10px;
+	font-size: 20px;
+}
+
+.workPlan .addPlan label:not(.alignSelfStart) {
+	align-self: center;
+}
+
+.workPlan .addPlan>label {
+	justify-self: end;
+}
+
+.workPlan .addPlan :is(select, textarea, input) {
+	padding: 10px;
+	font-size: 20px;
+}
+
+.workPlan .addPlan select {
+	align-self: center;
+	justify-self: right;
+}
+
+.workPlan .addPlan .inputsContainer {
+	padding: 30px;
+	border: 1px solid #008080;
+	display: grid;
+	gap: 10px;
+}
+
+.workPlan .addPlan .inputsContainer>div {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	text-align: right;
+}
+
+.workPlan .addPlan .inputsContainer :is(input, textarea) {
+	direction: rtl;
+}
+
+.workPlan .addPlan div:has(.saveBtn) {
+	display: grid;
+}
+
+.workPlan .addPlan .saveBtn {
+	align-self: end;
+	justify-self: left;
+	background-color: #cb025a;
+	color: white;
+
+	font-weight: bold;
+	font-size: 23px;
+
+	border: 1px solid #797979;
+	border-radius: 7px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.alignSelfStart {
+	align-self: start;
+}
+
+.alternateDropDown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.workPlan .addPlan {
+		grid-template-columns: 1fr;
+	}
+
+	.workPlan .addPlan select {
+		justify-self: center;
+	}
+
+	.workPlan .addPlan .inputsContainer {
+		padding: 10px;
+	}
+
+	.workPlan .addPlan .inputsContainer>div {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.workPlan .addPlan .saveBtn {
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+}
